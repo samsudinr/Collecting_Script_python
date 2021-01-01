@@ -15,7 +15,7 @@ gc = gspread.authorize(credentials)
 today   = date.today()
 date_crawl = today.strftime("%Y-%m-%d")
 
-CHROMEPATH = 'D:/aEMC_GROUP/Project/Instagram_ads/python_code/SocialNetworkAnalysis/cred/chromedriver.exe'
+CHROMEPATH = 'path-of-your-chrome/chromedriver.exe'
 
 def get_info(links):
     try:
@@ -33,9 +33,9 @@ def get_info(links):
         print "error"
         return 0
 
-id_source = gc.open_by_key("17WqVSfwRQ_ITKQD3wH_6SnV-2mS9adSlLwHhRMEWlRk")
+id_source = gc.open_by_key("id-file-spreadsheet")
 time.sleep(3)
-id_results = gc.open_by_key("16KBZWiIRi1dNUnDjuvCjgpHpey5J_Rugd-H9Smin2jQ")
+id_results = gc.open_by_key("id-file-spreadsheet")
 time.sleep(3)
 
 sheet_name = id_source.worksheet('config')
