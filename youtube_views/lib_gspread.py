@@ -6,8 +6,8 @@ from oauth2client.file import Storage
 from oauth2client.tools import run_flow
 
 cred_emcanalyticsteam = {
-    'pathClientSecret': 'cred/client_secret_emcanalyticsteam.json',
-    'pathTokenDrive': 'cred/token_drive_emcanalyticsteam.pickle'
+    'pathClientSecret': 'cred/client_secret.json',
+    'pathTokenDrive': 'cred/token_drive.pickle'
 }
 
 # Start the OAuth flow to retrieve credentials
