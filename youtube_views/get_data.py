@@ -64,6 +64,7 @@ print (new_data)
 new_data.loc[new_data['Views Video 1'] == 0 ] = get_info(new_data['Video URL 1'])
 new_data.loc[new_data['Views Video 2'] == 0 ] = get_info(new_data['Video URL 2'])
 
+old_data = old_data[~(old_data['Date'] == date_crawl)].reset_index(drop=True)
 results = old_data.append(new_data)
 
 try:
